@@ -45,3 +45,10 @@ The project implements 3 classic GoF design patterns, each solving a specific ar
 2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
 3. Locate and run the `main` method inside the `com.ordersystem.app.Main` class.
 4. Check the console output to observe the step-by-step processing of multiple orders using different strategies and observers.
+
+ ## Working Demo (Interactive CLI)
+The application includes a interactive Command Line Interface. When you run the `Main` class, you will be greeted with a menu that allows you to:
+1. Initialize a new order checkout process.
+2. Select items from a mock product catalog to add to your cart.
+3. Choose a specific payment strategy (Credit Card or PayPal) at runtime.
+4. Watch the `OrderProcessingService` execute the transaction and trigger the `Observer` notifications (Email, Inventory) live in the console.
