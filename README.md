@@ -15,8 +15,7 @@ The project is logically divided into three distinct layers to enforce the Separ
   This layer knows absolutely nothing about the outside world (databases, specific payment gateways, external APIs).
 
 2. **Infrastructure (`com.ordersystem.infrastructure`)**
- Contains concrete classes for payment processing (`CreditCardPayment`, `PaypalPayment`), concrete observers (`EmailNotifier`, `InventoryManager`), and a simulated data storage (`InMemoryOrderRepository`).
-   - **Rule:** This layer depends on the `Domain` layer and implements its interfaces.
+ Contains concrete classes for payment processing (`CreditCardPayment`, `PaypalPayment`), concrete observers (`EmailNotifier`, `InventoryManager`), and a simulated data storage (`InMemoryOrderRepository`). This layer depends on the `Domain` layer and implements its interfaces.
 
 3. **Service & Application (`com.ordersystem.service`, `com.ordersystem.app`)**
   `OrderProcessingService` manages the checkout workflow, bridging the domain logic with repository persistence (following the Dependency Inversion Principle). The `Main` class serves as the entry point, wiring all dependencies together.
