@@ -80,7 +80,7 @@ public class Main {
                 if ("1".equals(paymentChoice)) {
                     builder.setPaymentMethod(new CreditCardPayment("1111-2222-3333-4444"));
                 } else {
-                    builder.setPaymentMethod(new PaypalPayment("student@university.edu"));
+                    builder.setPaymentMethod(new PaypalPayment("student@tsi.lv"));
                 }
 
                 // Collecting and processing order
