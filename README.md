@@ -43,7 +43,6 @@ The project implements 3 classic GoF design patterns, each solving a specific ar
 4. Check the console output to observe the step-by-step processing of multiple orders using different strategies and observers.
 
  ## Working Demo (Interactive CLI)
-The application includes a interactive Command Line Interface. When you run the `Main` class, you will be greeted with a menu that allows you to:
 1. Initialize a new order checkout process.
 2. Select items from a mock product catalog to add to your cart.
 3. Choose a specific payment strategy (Credit Card or PayPal) at runtime.
